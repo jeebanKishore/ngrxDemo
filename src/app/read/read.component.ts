@@ -15,11 +15,11 @@ export class ReadComponent implements OnInit {
   tutorials: Observable<Tutorial[]>;
 
   constructor(private store: Store<AppState>) {
-    this.tutorials = store.select('tutorial')
+    this.tutorials = store.select('tutorial');
   }
 
   delTutorial(index: number) {
-    this.store.dispatch(new TutorialActions.RemoveTutorial(index))
+    this.store.dispatch(new TutorialActions.RemoveTutorial(index));
   }
 
   ngOnInit() {

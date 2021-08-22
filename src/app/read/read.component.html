@@ -2,7 +2,7 @@
 
   <h3>Tutorials</h3>
   <ul>
-    <li (click)="delTutorial(i)" *ngFor="let tutorial of tutorials | async; let i = index">
+    <li (click)="delTutorial(i)" *ngFor="let tutorial of tutorials | async; let i = index" style="cursor: pointer;">
       <span>{{ tutorial.name }}</span>
     </li>
   </ul>
