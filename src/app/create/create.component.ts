@@ -13,9 +13,14 @@ import * as TutorialActions from './../actions/tutorial.actions';
 export class CreateComponent implements OnInit {
 
   constructor(private store: Store<AppState>) { }
-
+/**
+ * Here we will dispatch an event to store on button click from view
+ * for adding new Tutorial to the store
+ * @param name Name of the tutorial
+ * @param url URL of the tutorial
+ */
   addTutorial(name: string, url: string) {
-    this.store.dispatch(new TutorialActions.AddTutorial({name: name, url: url}))
+    this.store.dispatch(new TutorialActions.AddTutorial({name: name, url: url}));
   }
 
   ngOnInit() {
