@@ -32,7 +32,7 @@ export function _reducer(state: Tutorial[] = [initialState], action: TutorialAct
 }
 
 /**
- * Work around to prevent type mismatchwhile registering the reducer in app module
+ * Work around to prevent type mismatch while registering the reducer in app module
  * @param state : any
  * @param action : any
  * @returns
